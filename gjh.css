@@ -1,0 +1,278 @@
+body { 
+    font-family: 'Roboto', sans-serif; 
+    margin: 0; padding: 0; 
+    box-sizing: border-box; 
+} 
+.header, .section, .footer { 
+    padding: 20px; 
+    text-align: center; 
+} 
+.header { 
+    background-color: #dcffff; 
+    border-bottom: 1px solid #e9ecef; 
+} 
+.header img { 
+    border-radius: 50%; 
+    width: 50px; 
+    height: 50px; 
+} 
+.header h1 { 
+    font-size: 24px; 
+    margin: 10px 0; 
+} 
+
+.header p { 
+    margin: 5px 0; 
+    color: #6c757d; 
+} 
+.header .social-icons { 
+    margin-top: 10px; 
+} 
+.header .social-icons a { 
+    color: #6c757d; 
+    margin: 0 5px; 
+    text-decoration: none; 
+} 
+.nav { 
+    display: flex; 
+    justify-content: center; 
+    margin-top: 20px; 
+    font-size: 20px;
+    text-align: center;
+    gap: 15px;
+} 
+.nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.nav a:hover {
+    background-color: #3498db;
+    color: white;
+    transform: scale(1.1);
+}
+.nav a.active {
+    background-color: #2980b9;
+    color: white;
+}
+.hero { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 50px 20px; 
+    background-color: #fff; 
+} 
+.hero-text { 
+    max-width: 50%; 
+    text-align: left; 
+} 
+.hero-text h2 { 
+    font-size: 36px; 
+    margin-bottom: 20px; 
+} 
+.hero-text p { 
+    font-size: 18px; 
+    margin-bottom: 20px; 
+} 
+.hero-text a { 
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: #ff9900; 
+    color: #fff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+} 
+.hero img { 
+    max-width: 40%; 
+    border-radius: 10px; 
+} 
+.about, .services, .tools { 
+    padding: 50px 20px; 
+    background-color: #fff; 
+} 
+.about h2, .services h2, .tools h2 { 
+    font-size: 28px; 
+    margin-bottom: 20px; 
+    text-align: center;
+} 
+.about p, .services p, .tools p { 
+    font-size: 16px; 
+    margin-bottom: 20px; 
+} 
+.about img, .services img, .tools img { 
+    max-width: 38%; 
+    border-radius: 8px; 
+} 
+.services .service-item { 
+    display:inline-block; 
+    width: 25%; 
+    margin: 0 1,5%; 
+    text-align: center;
+} 
+.services .service-item img { 
+    max-width: 60%;
+    margin-bottom: 30px;
+    
+} 
+.tools .tool-item { 
+    display: inline-block; 
+    width: 30%; margin: 0 1%; 
+    text-align: center; 
+} 
+.tools .tool-item img { 
+    width: 100px; 
+    height: 100px; 
+    margin-bottom: 10px; 
+} 
+.footer { 
+    background-color: #f8f9fa; 
+    border-top: 1px solid #e9ecef; 
+}
+.contact-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Gmail */
+.gmail-float-glow {
+    color: #D14836;
+    text-decoration: none;
+    display: inline-block;
+    animation: float 2s infinite alternate ease-in-out;
+    transition: text-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.gmail-float-glow:hover {
+    text-shadow: 0 0 10px #D14836, 0 0 20px #D14836, 0 0 30px #D14836;
+    transform: scale(1.1);
+}
+@keyframes float {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+}
+
+/* WhatsApp */
+.whatsapp-shake {
+    color: #25D366;
+    text-decoration: none;
+    display: inline-block;
+    animation: pulse 1.5s infinite;
+    transition: transform 0.3s ease-in-out;
+}
+.whatsapp-shake:hover {
+    animation: shake 0.3s ease-in-out infinite alternate;
+}
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(3px); }
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Instagram */
+.instagram-gradient {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    padding: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+.instagram-gradient:hover {
+    transform: translateY(-5px);
+    filter: brightness(1.2);
+}
+.contact-title {
+    text-align: center;
+}
+.btn {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+  }
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Membuat 3 kolom */
+    gap: 40px; /* Memberikan jarak antar elemen */
+    justify-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.portfolio-category {
+    grid-column: span 3; /* Membuat judul kategori memenuhi seluruh lebar grid */
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-item img {
+    width: 120px; /* Ukuran gambar seragam */
+    height: auto;
+    border-radius: 10px; /* Opsional: Membuat gambar lebih estetis */
+    margin-bottom: 10px;
+}
+
+.portfolio-item p {
+    font-weight: bold;
+}
+
+.skills-section {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 25px;
+  line-height: 25px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: width 1s ease;
+}
+
+.progress.vs       { width: 75%; background-color: #007acc; }
+.progress.blender  { width: 80%; background-color: #f5792a; }
+.progress.corel    { width: 75%; background-color: #28a745; }
+.progress.unity    { width: 70%; background-color: #333; }
+.progress.vscode   { width: 80%; background-color: #0078d7; }
+.progress.gdevelop { width: 70%; background-color: #5a2ca0; }
+.progress.adobephotoshop { width: 70%; background-color: #1007bc; }
